@@ -3,7 +3,7 @@
 A premium thrift store REST API built with Node.js, Express, and MongoDB.
 
 ## 🌐 Live Demo
-- Frontend: [E—Comma Shop](https://ecomma.vercel.app)
+- Frontend: [ecomma-frontend.vercel.app](https://ecomma-frontend.vercel.app/)
 - API Base URL: [https://ecomma-backend.onrender.com](https://ecomma-backend.onrender.com)
 
 ---
