@@ -15,6 +15,21 @@ const register = async (req, res) => {
   try {
     const { name, email, mobile, password } = req.body
 
+    // VALIDATION
+    if (!name || !email || !mobile || !password) {
+      return res.status(400).json({ success: false, message: 'All fields are required!' })
+    }
+    if (password.length < 6) {
+      return res.status(400).json({ success: false, message: 'Password must be at least 6 characters!' })
+    }
+    if (mobile.length !== 10) {
+      return res.status(400).json({ success: false, message: 'Mobile number must be 10 digits!' })
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailRegex.test(email)) {
+      return res.status(400).json({ success: false, message: 'Invalid email address!' })
+    }
+
     // 1. Check if email already exists
     const existingEmail = await User.findOne({ email })
     if (existingEmail) {
