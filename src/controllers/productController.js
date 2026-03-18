@@ -42,7 +42,9 @@ const addProduct = async (req, res) => {
 
     res.status(201).json({ success: true, product })
   } catch (error) {
-    res.status(500).json({ success: false, message: error.message })
+      console.log('Add product error:', error.message, error.stack)
+      res.status(500).json({ success: false, message: error.message })
+
   }
 }
 
