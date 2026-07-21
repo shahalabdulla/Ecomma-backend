@@ -7,7 +7,7 @@
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=flat&logo=cloudinary&logoColor=white)
 ![Render](https://img.shields.io/badge/Deployed%20on%20Render-46E3B7?style=flat&logo=render&logoColor=white)
 
-A RESTful API for E—Comma, a full-stack clothing(thrift) store application. Built with Node.js and Express, featuring JWT authentication, OTP email verification, role-based access control, and Cloudinary image storage.
+A RESTful API for E—Comma, a full-stack clothing store application. Built with Node.js and Express, featuring JWT authentication, OTP email verification, role-based access control, and Cloudinary image storage.
 
 **Live API:** https://ecomma-backend.onrender.com
 
